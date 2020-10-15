@@ -1,2 +1,11 @@
-<h1>Recipes#new</h1>
-<p>Find me in app/views/recipes/new.html.erb</p>
+<div class="container">
+  <div class="row">
+  <h2>料理レシピ</h2>
+  <%= form_with model: @recipe, local: true do |f| %>
+    料理名
+    写真
+    材料
+    作り方
+  <% end %>
+  </div>
+</div>
