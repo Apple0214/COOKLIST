@@ -1,2 +1,5 @@
-<h1>Genres#new</h1>
-<p>Find me in app/views/genres/new.html.erb</p>
+<h2>料理ジャンル作成</h2>
+<%= form_with model: @genre, local:true do |f| %>
+  ジャンル名<%= f.text_field :name %><br >
+  <%= f.submit '新規ジャンル作成' %>
+<% end %>
